@@ -38,7 +38,6 @@ function selectDifficulty(difficulty) {
     let playerAttempts = 0;
     let computerAttempts = 0;
     let gameOver = false;
-    alert(gameConfig);
     
     // Variables pour l'IA de l'ordinateur
     let computerMinRange = minRange;
