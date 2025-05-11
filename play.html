@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                <span class="difficulty-badge" id="difficulty-badge">Niveau: ?</span>
+                <h1>Mystère Numérique</h1>
+                <p>Devinez le nombre secret!</p>
+            </div>
+            
+            <div class="content">
+                <div class="game-info">
+                    <div class="info-item">
+                        <h3>Plage</h3>
+                        <p id="range-display">? - ?</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>Essais</h3>
+                        <p id="attempts-counter">0</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>Nombre secret</h3>
+                        <p id="target-number"></p>
+                    </div>
+                </div>
+                
+                <div class="game-section">
+                    <div class="player-section">
+                        <h3 class="section-title"><i>👤</i> Votre devinette</h3>
+                        
+                        <div class="guess-input">
+                            <input type="number" id="player-guess" placeholder="Entrez un nombre" min="1">
+                            <button id="guess-button">Deviner</button>
+                        </div>
+                        
+                        <div class="number-display" id="player-display">?</div>
+                        
+                        <div class="hint" id="player-hint"></div>
+                        
+                        <div class="attempts-counter">
+                            Vos essais: <span id="player-attempts">0</span>
+                        </div>
+                    </div>
+                    
+                    <div class="computer-section">
+                        <h3 class="section-title"><i>🤖</i> Devinette de l'ordinateur</h3>
+                        
+                        <div class="number-display" id="computer-display">?</div>
+                        
+                        <div class="hint" id="computer-hint"></div>
+                        
+                        <div class="computer-thinking" id="thinking-message">
+                            En attente de votre premier essai...
+                        </div>
+                        
+                        <div class="attempts-counter">
+                            Essais de l'ordinateur: <span id="computer-attempts">0</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="game-history">
+                    <h3 class="history-title">Historique des essais</h3>
+                    <div class="history-log" id="history-log">
+                        <div class="history-item">La partie n'a pas encore commencé.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>© 2025 Mystère Numérique - Tous droits réservés</p>
+        </div>
+    </div>
+    
+    <!-- Modal de résultat -->
+    <div class="result-modal" id="result-modal">
+        <div class="modal-content">
+            <div class="result-icon" id="result-icon">🏆</div>
+            <h2 class="modal-title" id="modal-title">Félicitations!</h2>
+            <p class="modal-message" id="modal-message">Vous avez deviné le nombre correctement!</p>
+            <div class="modal-buttons">
+                <a href="jeu.html" class="btn btn-primary">Rejouer</a>
+                <a href="index.html" class="btn btn-secondary">Menu principal</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                <h1>Mystère Numérique</h1>
+                <p>Testez votre chance et votre intuition!</p>
+            </div>
+            
+            <div class="content">
+                <div class="game-description">
+                    <h2>Bienvenue au jeu de devinette de nombre!</h2>
+                    <p>Êtes-vous prêt à défier l'ordinateur dans une bataille de devinettes numériques? Choisissez un niveau de difficulté et voyez si vous pouvez deviner le nombre secret avant l'ordinateur!</p>
+                    <p>Plus le niveau est difficile, plus la plage de nombres possibles est grande.</p>
+                </div>
+                
+                <div class="rules">
+                    <h3>Comment jouer?</h3>
+                    <ul>
+                        <li>Choisissez un niveau de difficulté ci-dessous</li>
+                        <li>Sur l'écran de jeu, entrez votre estimation du nombre secret</li>
+                        <li>Vous verrez aussi l'estimation de l'ordinateur</li>
+                        <li>Celui qui devine le nombre en premier gagne!</li>
+                        <li>Soyez attentif aux indices "plus grand" ou "plus petit" après chaque essai</li>
+                    </ul>
+                </div>
+                
+                <div class="difficulty-section">
+                    <h3>Choisissez votre niveau</h3>
+                    <div class="difficulty-cards">
+                        <div class="difficulty-card easy" onclick="selectDifficulty('facile')">
+                            <div class="difficulty-icon">
+                                <span class="star">★</span>
+                            </div>
+                            <h4>Facile</h4>
+                            <p>Nombres de 1 à 50</p>
+                            <p>Parfait pour débuter</p>
+                        </div>
+                        
+                        <div class="difficulty-card medium" onclick="selectDifficulty('moyen')">
+                            <div class="difficulty-icon">
+                                <span class="star">★★</span>
+                            </div>
+                            <h4>Moyen</h4>
+                            <p>Nombres de 1 à 100</p>
+                            <p>Un défi équilibré</p>
+                        </div>
+                        
+                        <div class="difficulty-card hard" onclick="selectDifficulty('difficile')">
+                            <div class="difficulty-icon">
+                                <span class="star">★★★</span>
+                            </div>
+                            <h4>Difficile</h4>
+                            <p>Nombres de 1 à 200</p>
+                            <p>Pour les experts</p>
+                        </div>
+                    </div>
+                    
+                    <div style="text-align: center;">
+                        <a href="play.html" class="btn" id="start-button" disabled>Commencer le jeu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>© 2025 Mystère Numérique - Tous droits réservés</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
